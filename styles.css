@@ -92,7 +92,7 @@ body {
 #Mensaje {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 100px; /* Ajusta este valor para dejar espacio suficiente para el footer */
+   margin-bottom: 50px; /* Ajusta este valor para dejar espacio suficiente para el footer */
 }
 
 footer {
