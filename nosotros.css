@@ -1,7 +1,5 @@
 #nosotros img{
-    height: 570px;
-    margin-left: 2%;
-    margin-top: 2%;
+    height: 400px;
 }
 
 #nosotros {
@@ -11,8 +9,7 @@
     text-align: center;
     color: orange;
     padding: 50px 0;
-    transform: translateY(25%);
-    
+    margin-top: 300px;
   }
   
   #nosotros .container {
@@ -20,3 +17,15 @@
     justify-content: center;
     
   }
+
+  #nosotros h1 {
+    font-size: 25px;
+    
+  }
+
+
+  @media screen and (max-width: 768px) {
+    #nosotros {
+      margin-top: 0px
+    }
+    }
