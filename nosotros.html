@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="nosotros.css">
+    <title>David Desing WEB</title>
+</head>
+
+<body>
+
+
+<nav id="barraNavegacion">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " id="navegacion">
+        <div class="container" id="naveMenu" >
+          <a style="margin-right: 50px;" class="navbar-brand" href="index.html"> <h1>DAVID WEB DESING</h1></a>
+          <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="botonMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="Servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="contactenos.html">Contactenos</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search" action="https://www.google.com/search" method="GET" target="_blank">
+                <!-- Campo de entrada para la búsqueda -->
+                <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                <!-- Botón de búsqueda -->
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+</nav>
+
+
+<main>
+
+
+    <header>
+        <div id="nosotros">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6 col-xs-12">
+                    <img src="IMG/davidImg.jpg" alt="fotoDavid">
+                </div>
+                <div class="col-xl-6 col-xs-12" id="imgWeb">
+                    <h1>Nombre: <p>Guillermo David Rodriguez Salas</p></h1>
+                    <h1>Cedula: <p>402060670</p></h1>
+                    <h1>Correo: <p>dgrodrisalas@gmail.com</p></h1>
+                    <h1>Somos especialistas en Soporte Técnico en Costa Rica desde el año 2013. Nos apaciona lo que hacemos, de esa manera podemos ofrecer soporte técnico de calidad.</h1>
+                   </div>
+                </div>
+              </div>
+            </div>
+    </header>
+
+
+</main>
+
+
+<footer>
+  <div id="footer"> 
+    <div class="contenido">
+      <strong> <p> <credit>&copy; Derechos Reservados DAVID RODRIGUEZ SALAS 2023</credit>
+      <credit>&copy; <a href="#"><strong>David WEB Design.</strong></a></credit> JUL 23, 2023</p></strong>
+      <div id="date"></div>
+      <script>
+          document.getElementById("date").innerHTML = new Date().toDateString()
+      </script>
+     
+  </div>
+    <div>
+      <div id="logoWhatsapp">
+        <a href="https://wa.me/+50660702742/?text=tu%20texto%20personalizado" target="_blank">
+          <img src="img/whatsapp.png" width="30" height="30">
+       </a>
+      </div>
+      <div id="correo">
+        <a href="mailto:dgrodrisalas@gmail.com?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad."> 
+          <img src="img/gmail.png" width="30" height="30">
+        </a>
+      </div>
+      
+      <div id="llamada">
+        <a href="tel:+50660702742">
+          <img src="img/llamada.png" width="30" height="30">
+        </a>
+      </div>
+  </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

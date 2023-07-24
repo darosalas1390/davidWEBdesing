@@ -1,0 +1,66 @@
+/* Estilos para el servicio */
+#servicio1 img {
+    height: 550px;
+    max-width: 100%;
+  }
+  
+  #servicio1 {
+    background: url(IMG/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: orange;
+    padding: 50px 0;
+  }
+  #servicio2 {
+    background: url(IMG/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: orange;
+    padding: 50px 0;
+  }
+  
+  #servicio .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #servicio h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  
+  
+  #servicio h2 {
+    font-size: 25px;
+    color: #DFF013;
+  }
+  
+  /* Eliminar el margen inferior en el último header */
+  header:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Estilos para el servicio */
+
+#servicio1 h1,
+#servicio2 h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#servicio1 li,
+#servicio2 li {
+  font-size: 18px;
+}
+
+#servicio1 h2,
+#servicio2 h2 {
+  font-size: 22px;
+  color: #DFF013;
+}
+
+header {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="servicio.css">
+    <title>David Desing WEB</title>
+</head>
+
+<body>
+
+
+<nav id="barraNavegacion">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " id="navegacion">
+        <div class="container" id="naveMenu" >
+          <a style="margin-right: 50px;" class="navbar-brand" href="index.html"> <h1>DAVID WEB DESING</h1></a>
+          <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" id="botonMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="Servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="contactenos.html">Contactenos</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search" action="https://www.google.com/search" method="GET" target="_blank">
+                <!-- Campo de entrada para la búsqueda -->
+                <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                <!-- Botón de búsqueda -->
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+</nav>
+
+
+<main>
+
+    <header>
+
+        <div class="container overflow-auto" id="enviodeCorreo">
+  
+          <h1>Datos Personales</h1>
+  
+          <form id="form">
+  
+            <input type="hidden" id="mensaje1" name="mensaje1" value="Nuevo Correo Solicitud o Consulta ">
+            <input type="hidden" id="mensaje2" name="mensaje2" value="Mi nombre es: ">
+            <input type="hidden" id="mensaje3" name="mensaje3" value="Cedula: ">
+            <input type="hidden" id="mensaje4" name="mensaje4" value="Mi telefono es: ">
+            <input type="hidden" id="mensaje5" name="mensaje5" value="Mi email es: ">
+            <input type="hidden" id="mensaje10" name="mensaje6" value="Mensaje: ">
+  
+  
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="name"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Identificacion</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Identificacion" name="id"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" name="phone"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+                name="email" required>
+            </div>
+  
+            <h1>Solicitud o Consulta</h1>
+  
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="messageQueja"
+                required></textarea>
+            </div>
+  
+            <input type="submit" id="button" value="Enviar Mensaje" class="btn btn-success">
+        </div>
+  
+  
+        </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+        <script type="text/javascript">
+          emailjs.init('WtW6-3ZbgvZ8ka6QD')
+        </script>
+  
+        <script type="text/javascript">
+          emailjs.init('WtW6-3ZbgvZ8ka6QD')
+        </script>
+        <script>
+          const btn = document.getElementById('button');
+  
+          document.getElementById('form')
+            .addEventListener('submit', function (event) {
+              event.preventDefault();
+  
+              btn.value = 'Enviando...';
+  
+              const serviceID = 'default_service';
+              const templateID = 'template_sxrumxa';
+  
+              emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Enviar Mensaje';
+                  alert('Su Mensaje a sido Enviado');
+                  window.location.href = "index.html";
+                }, (err) => {
+                  btn.value = 'Enviar Mensaje';
+                  alert(JSON.stringify(err));
+                });
+            });
+        </script>
+      </header>
+
+</main>
+
+
+<footer>
+  <div id="footer"> 
+    <div class="contenido">
+      <strong> <p> <credit>&copy; Derechos Reservados DAVID RODRIGUEZ SALAS 2023</credit>
+      <credit>&copy; <a href="#"><strong>David WEB Design.</strong></a></credit> JUL 23, 2023</p></strong>
+      <div id="date"></div>
+      <script>
+          document.getElementById("date").innerHTML = new Date().toDateString()
+      </script>
+     
+  </div>
+    <div>
+      <div id="logoWhatsapp">
+        <a href="https://wa.me/+50660702742/?text=tu%20texto%20personalizado" target="_blank">
+          <img src="img/whatsapp.png" width="30" height="30">
+       </a>
+      </div>
+      <div id="correo">
+        <a href="mailto:dgrodrisalas@gmail.com?subject=Quejas o Consultas&body=Estimado/a cliente, Valoramos tu opinión y nos gustaría brindarte la mejor experiencia posible. Si has experimentado algún problema o insatisfacción con nuestros productos/servicios, te invitamos a compartir tu queja con nosotros. Tu retroalimentación es muy importante para nosotros y nos ayudará a mejorar nuestros estándares de calidad."> 
+          <img src="img/gmail.png" width="30" height="30">
+        </a>
+      </div>
+      
+      <div id="llamada">
+        <a href="tel:+50660702742">
+          <img src="img/llamada.png" width="30" height="30">
+        </a>
+      </div>
+  </div>
+</div>
+</footer>
+
+
+
+</body>
+</html>
